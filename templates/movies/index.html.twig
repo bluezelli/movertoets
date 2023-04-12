@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MoviesController!{% endblock %}
+
+{% block body %}
+<style>
+</style>
+
+<div class="container">
+    <div class="row">
+
+        {% for genre in genres %}
+        <a href="/movies/{{ genre.id }}"> genre.name  </a>
+
+
+        {% endfor %}
+
+    </div>
+</div>
+
+
+{% endblock %}
